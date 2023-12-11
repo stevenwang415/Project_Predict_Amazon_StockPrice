@@ -1,0 +1,24 @@
+In mani.py, the get_dates() function will return 9 different things
+
+The Training Set: Dates, X Matrix, y value
+The Validation Set: Dates, X Matrix, y value
+The Test Set: Dates, X Matrix, y value
+
+
+------------------------------------------------------------------------------
+
+
+The LSTM model here uses KERAS as the model in order to create layers of neural nets, each 
+with an activation function. 
+
+In the get_model() function, we need to input The Training Set
+of X and y along. It takes the X and y training set along with the X and y validation set.
+Input also the learning rate, and the number of times the network should be reran
+    lr = .001
+    num = 100
+These are base values that you can try
+
+We are allowed to predict the validation set 
+or the test set. In either case, make sure to use the X Matrix as our training instances.
+
+
