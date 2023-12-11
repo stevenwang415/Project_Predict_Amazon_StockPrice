@@ -1,4 +1,3 @@
-#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
 
 from mani import get_model
 from mani import get_predictions

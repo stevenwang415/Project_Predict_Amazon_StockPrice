@@ -1,6 +1,3 @@
-#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
-
-# Run this code only once to get the data.csv file
 
 import pandas as pd
 import requests
@@ -37,5 +34,7 @@ def get_dat():
   dat = dat[['Close']]
   dat['Close'] = dat['Close'].astype('float64')
   dat = dat[::-1]
-  dat.to_csv('C:/Users/chens/Documents/FinalProject/app/data.csv', index =True)
+  
+  # Uncomment this if you want a physical csv copy 
+  #dat.to_csv('C:/Users/chens/Documents/FinalProject/app/data.csv', index =True)
   return dat

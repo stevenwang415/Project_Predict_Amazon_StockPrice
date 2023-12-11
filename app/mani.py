@@ -1,4 +1,3 @@
-#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
 
 # Here is where most of the computational power is going
 import pandas as pd
@@ -6,6 +5,8 @@ import datetime
 import numpy as np
 import matplotlib.pyplot as plt
 from data import get_dat
+
+# Uncomment this if you are going to use csv 
 #import os
 
 
@@ -14,6 +15,7 @@ def str_dt(s):
     year, month, day = int(split[0]), int(split[1]), int(split[2])
     return datetime.datetime(year = year, month = month, day = day)
 
+# Uncomment this if you are going to use the csv
 # def get_dat():
 #   directory = "C:/Users/chens/Documents/FinalProject/app"
 #   file_name = 'data.csv'
