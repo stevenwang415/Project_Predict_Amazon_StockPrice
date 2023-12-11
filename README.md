@@ -6,3 +6,6 @@ decisions for future data.
 
 
 There is also functionality to predict new instances of data using the model that we have created
+
+
+The iPython file is also included in this repo if one wishes to not go through the website hosting process. 
