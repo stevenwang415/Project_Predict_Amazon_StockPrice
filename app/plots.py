@@ -1,7 +1,9 @@
+#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
+
 from mani import get_model
 from mani import get_predictions
 from mani import get_dates
-from mani import get_dat
+from data import get_dat
 import streamlit as st
 import matplotlib.pyplot as plt
 

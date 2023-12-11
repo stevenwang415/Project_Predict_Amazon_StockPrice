@@ -1,3 +1,5 @@
+#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
+
 # Run this code only once to get the data.csv file
 
 import pandas as pd

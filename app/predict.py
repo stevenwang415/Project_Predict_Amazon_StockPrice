@@ -1,3 +1,5 @@
+#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
+
 import streamlit as st
 from mani import get_dat
 import numpy as np
@@ -15,11 +17,11 @@ def get_predict_page():
     c = st.number_input('Day Before Yesterday Closing Price')
     
     if st.button('Calculate'):
-        x = np.array([[[float(a)], [float(b)], [float(c)]]])
+        test = np.array([[[float(a)], [float(b)], [float(c)]]])
         d_train, x_train, y_train, d_val, x_val, y_val, d_test, x_test, y_test = get_dates()
-        model = get_model(x_train, y_train, x_val, y_val, 60, .0001)
+        model = get_model(x_train, y_train, x_val, y_val, 60, .001)
         
-        predict = get_predictions(x, model)[0]
+        predict = get_predictions(test, model)[0]
         st.subheader(f'The predicted closing stock price is {predict:.2f}')
     
     

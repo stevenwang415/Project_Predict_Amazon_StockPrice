@@ -1,3 +1,5 @@
+#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
+
 # Here is where most of the computational power is going
 import pandas as pd
 import datetime
@@ -174,12 +176,12 @@ def get_dates():
 
 #-------------------------------------------------------------------------
 # Here we actually apply LSTM on our stock model
-
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras import layers
 
 def get_model(x_train, y_train, x_val, y_val, epoch, lr):
-  from tensorflow.keras.models import Sequential
-  from tensorflow.keras.optimizers import Adam
-  from tensorflow.keras import layers
+  
   model = Sequential([layers.Input((3,1)),
                   layers.LSTM(64),
                   layers.Dense(32, activation = 'relu'),
@@ -198,7 +200,7 @@ def get_predictions(data, model):
   return model.predict(data).flatten()
 
 
-
+#----------------------------------------------------------------------------------
 
 
 
