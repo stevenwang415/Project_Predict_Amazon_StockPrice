@@ -1,5 +1,3 @@
-#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
-
 # Here is where most of the computational power is going
 import pandas as pd
 import datetime

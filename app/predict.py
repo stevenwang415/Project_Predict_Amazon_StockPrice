@@ -1,5 +1,3 @@
-#! C:\Users\chens\Documents\FinalProject\env\Scripts\python.exe
-
 import streamlit as st
 from mani import get_dat
 import numpy as np
