@@ -4,6 +4,7 @@ In order to access the website, you will need to have streamlit installed. The c
 
 Best practice is to host this code into a virtual environment. Use any preferred way.
   The recommended method is:
+  
     1) Open command line and go to your preferred directory
     
     2)  Now in the directory type in:
